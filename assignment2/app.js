@@ -16,10 +16,7 @@
             $scope.boughtList = [];
             $scope.checkItem = function (index) {
                 $scope.boughtList.push($scope.buyList[index]);
-                if($scope.buyList >=1){
-                    [$scope.buyList[0], $scope.buyList[index]] = [$scope.buyList[index], $scope.buyList[0]];
-                }
-                $scope.buyList.pop();
+                $scope.buyList.splice(index, 1);
             }
             
         });

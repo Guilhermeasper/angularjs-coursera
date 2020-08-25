@@ -44,7 +44,7 @@
                                 ng-click="checkItem($index)"
                             >
                                 <span class="glyphicon glyphicon-ok"></span>
-                                Bought
+                                Buy
                             </button>
                         </li>
                     </ul>
@@ -61,7 +61,7 @@
                             Bought {{item.quantity}} {{item.name}}
                         </li>
                     </ul>
-                    <div class="emptyMessage" ng-If="buyList.length>0">
+                    <div class="emptyMessage" ng-If="boughtList.length==0">
                         {{alreadyBoughtMessage}}
                     </div>
                 </div>
